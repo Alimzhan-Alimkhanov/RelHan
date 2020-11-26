@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/i_news"
+            android:title="@string/nav_news_ru" />
+        <item
+            android:id="@+id/nav_towns"
+            android:icon="@drawable/i_town"
+            android:title="@string/nav_town_ru" />
+        <item
+            android:id="@+id/nav_find"
+            android:icon="@drawable/i_find"
+            android:title="@string/nav_find_ru" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/i_favorites"
+            android:title="@string/nav_favorite_ru" />
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/i_contacts"
+            android:title="@string/nav_contact_ru" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/i_setting"
+            android:title="@string/nav_setting_ru" />
+        <item
+            android:id="@+id/nav_infoapp"
+            android:icon="@drawable/i_infoapp"
+            android:title="@string/nav_infoapp_ru" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/i_logout"
+            android:title="@string/nav_logout_ru" />
+    </group>
+
+
+</menu>

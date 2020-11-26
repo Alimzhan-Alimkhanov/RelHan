@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Spinner
+             android:layout_gravity="center_vertical"
+            android:id="@+id/spr_contacts"
+            android:layout_weight="80"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            </Spinner>
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_map"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/img_map"
+                    android:layout_weight="20"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <ScrollView
+        android:layout_below="@id/appbarlayout"
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="ЦЕНТР ЗАНЯТОСТИ НАСЕЛЕНИЯ Г. СЕМЕЙ"
+        android:id="@+id/txv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:src="@drawable/locked"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txv_title"
+        android:id="@+id/img_contact"
+        android:layout_width="200dp"
+        android:layout_height="240dp" />
+
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@id/img_contact"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Шинжин Турсымбек Дюсенбаевич"
+        android:id="@+id/txv_contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@id/txv_contact_name"
+        android:textColor="@color/text_gray"
+        android:textSize="15sp"
+        android:text="Директор"
+        android:id="@+id/txv_contact_rang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txv_contact_rang"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Адрес:"
+        android:id="@+id/txv_contact_street_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_alignBaseline="@id/txv_contact_street_title"
+        android:layout_toRightOf="@id/txv_contact_street_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="ул. Козбагарова, д. 40"
+        android:id="@+id/txv_contact_street_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txv_contact_street_text"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:id="@+id/txv_number_title"
+        android:text="Телефон: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+       android:layout_marginLeft="20dp"
+       android:layout_alignBaseline="@id/txv_number_title"
+       android:layout_toRightOf="@id/txv_number_title"
+       android:textColor="@color/colorAccent"
+       android:textSize="20sp"
+       android:text="8245y8924759"
+       android:id="@+id/txv_number_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txv_number_title"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:id="@+id/txv_email_title"
+                android:text="Email: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_alignBaseline="@id/txv_email_title"
+                android:layout_toRightOf="@id/txv_email_title"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:text="8245y8924759"
+                android:id="@+id/txv_email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txv_email_title"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:id="@+id/txv_number_people_title"
+                android:text="Контакты для граждан:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/txv_number_people_title"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:text="8245y8924759"
+                android:id="@+id/txv_number_people_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txv_number_people_text"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:id="@+id/txv_number_soc_title"
+                android:text="Контакты по оказанию социальной помощи: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/txv_number_soc_title"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:text="8245y8924759"
+                android:id="@+id/txv_number_soc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

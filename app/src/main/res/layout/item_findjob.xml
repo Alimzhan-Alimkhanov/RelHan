@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_toLeftOf="@id/img_star"
+                android:id="@+id/txv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Продавец непродовольственных товаров"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black" />
+
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/starnoactive"
+                android:id="@+id/img_star"
+                android:layout_width="40sp"
+                android:layout_height="40sp" />
+
+
+
+            <TextView
+                android:textColor="@color/text_gray"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txv_title"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Коммунальное государственное учреждение Средняя общеобразовательная школа №2 государственного учреждения Отдел образования города Семей Восточно-Казахстанской области"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+
+
+            <ImageView
+                android:layout_below="@id/txv_name"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_colllege"
+                android:src="@drawable/icons_college"
+                android:layout_width="30sp"
+                android:layout_height="30sp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/img_colllege"
+                android:layout_below="@id/txv_name"
+                android:id="@+id/txv_college"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Высше"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:layout_below="@id/img_colllege"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_skill"
+                android:src="@drawable/icon_skill"
+                android:layout_width="30sp"
+                android:layout_height="30sp" />
+
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/txv_college"
+                android:layout_toLeftOf="@id/img_skill"
+                android:id="@+id/txv_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="3 года"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:layout_below="@id/img_skill"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_salary"
+                android:src="@drawable/icon_salage"
+                android:layout_width="30sp"
+                android:layout_height="30sp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_toLeftOf="@id/img_skill"
+                android:layout_below="@id/txv_skill"
+                android:layout_marginRight="10dp"
+                android:id="@+id/txv_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="от 70 000"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_below="@id/img_salary"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_locate"
+                android:src="@drawable/icon_marker"
+                android:layout_width="30sp"
+                android:layout_height="30sp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_toLeftOf="@id/img_locate"
+                android:layout_below="@id/txv_salary"
+                android:layout_marginRight="10dp"
+                android:id="@+id/txv_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="ВКО/Усть-Каменогорск"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_below="@id/img_locate"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_time"
+                android:src="@drawable/icon_time"
+                android:layout_width="30sp"
+                android:layout_height="30sp" />
+
+            <TextView
+                android:maxLength="19"
+                android:textSize="15sp"
+                android:layout_toLeftOf="@id/img_time"
+                android:layout_below="@id/txv_locate"
+                android:layout_marginRight="10dp"
+                android:id="@+id/txv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Полный"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_below="@id/txv_time"
+                android:id="@+id/txv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="25.04.19"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

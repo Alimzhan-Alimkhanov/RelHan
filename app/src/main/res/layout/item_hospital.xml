@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="КГКП «Городская больница №1»"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txv_title"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txv_street_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Адрес:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_alignBaseline="@id/txv_street_1"
+                android:layout_toRightOf="@id/txv_street_1"
+                android:id="@+id/txv_street_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ул. Кайсенова, 119/1"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txv_street_1"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txv_doctor_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Главный Врач:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/txv_doctor_1"
+                android:layout_alignBaseline="@id/txv_doctor_1"
+                android:id="@+id/txv_doctor_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мейрбаев Е.Ш"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/txv_doctor_1"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/txv_number_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Телефон: "
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txv_number_1"
+                android:layout_alignBaseline="@id/txv_number_1"
+                android:id="@+id/txv_number_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="47-08-87"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

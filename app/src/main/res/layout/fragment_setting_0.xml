@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appbarlayout"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Язык"
+        android:id="@+id/txv_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <View
+        android:layout_below="@id/txv_languages"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/text_gray"/>
+
+
+    <TextView
+        android:layout_alignBaseline="@id/switch_RU"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Русский"
+        android:id="@+id/txv_rus"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:theme="@style/SCBSwitch"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line"
+        android:id="@+id/switch_RU"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_alignBaseline="@id/switch_KZ"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:text="Казаский"
+        android:id="@+id/txv_kz"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:theme="@style/SCBSwitch"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/switch_RU"
+        android:id="@+id/switch_KZ"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+
+
+</RelativeLayout>
