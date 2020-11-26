@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "963532098359",
+    "firebase_url": "https://relhan-242517.firebaseio.com",
+    "project_id": "relhan-242517",
+    "storage_bucket": "relhan-242517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963532098359:android:c49524d42e468d14",
+        "android_client_info": {
+          "package_name": "com.alim.relhan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963532098359-p6inf26vhbfm7jgj2p4o02ttm81ctuhc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alim.relhan",
+            "certificate_hash": "5f80651981e0be691c6766919dd75a7f2b08f92a"
+          }
+        },
+        {
+          "client_id": "963532098359-emhq4gcdcbnqehesjsruvgke7flhgvf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd1fOo_dvEciolqKJkA2hPhyQ791SLVpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963532098359-emhq4gcdcbnqehesjsruvgke7flhgvf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
